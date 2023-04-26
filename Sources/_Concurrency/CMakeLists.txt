@@ -9,7 +9,6 @@ set_target_properties(swift_Concurrency PROPERTIES
   Swift_MODULE_NAME _Concurrency)
 target_compile_options(swift_Concurrency PRIVATE
   -parse-stdlib
-  -disallow-use-new-driver
   "SHELL:-Xfrontend -enable-resilience")
 target_link_libraries(swift_Concurrency PUBLIC
   swiftCore)
